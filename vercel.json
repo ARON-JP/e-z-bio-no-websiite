@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/increment-view",
+      "destination": "/api/increment-view"
+    }
+  ]
+}
