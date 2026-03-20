@@ -36,3 +36,36 @@ Steps to Run Website.
 5. cd into ezbio-clone-root
 6. npm install i (install all node_modules)
 7. npm run dev
+
+## Build
+
+```bash
+npm run build
+```
+
+Static files are generated in the `build/` folder.
+
+## Deploy to Vercel
+
+This project is configured for Vercel with:
+
+- build command: `npm run build`
+- output directory: `build`
+- API route rewrite: `/increment-view` -> `/api/increment-view`
+
+Recommended flow:
+
+1. Push this folder to GitHub
+2. Import the repository in Vercel
+3. Keep the detected framework as `Vite`
+4. Deploy
+
+## Push to GitHub
+
+```bash
+git init -b main
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/<your-name>/<repo>.git
+git push -u origin main
+```
